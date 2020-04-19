@@ -1,0 +1,36 @@
+Question-1
+#Creating Dockerfile
+nano Dockerfile
+## Editing Dockerfile
+FROM alpine
+WORKDIR /usr
+CMD date | awk '{print $4}' >> question1.txt && cat question1.txt
+## Saving Dockerfile
+
+#Building Dockerfile
+docker build -t alpine:harshvardhan .
+#Running Container
+#Docker run -it --name harshvardhanc1q1 alpine:harshvardhan
+#Output
+12:28:41
+#Again Running Container
+docker start -i harshvardhanc1q1 
+12:29:01
+
+
+Question-2
+#Building Docker File
+docker build -t adhoc:harshvardhan https://github.com/redashu/summer2020dockertest.git
+#Retagging Docker File
+docker tag adhoc:harshvardhan harssssshh/adhoc:harshvardhan
+#Login Docker
+docker login
+#Pushing Docker Image
+docker push harssssshh/adhoc:harshvardhan
+
+
+Question-3
+#Running Existing Container
+docker run -idt --name harshvardhanc3q3 -p 1212:80 dockerashu/ckad:v2
+#Browsing URL At http://52.204.127.145:1212/
+Output: 7
