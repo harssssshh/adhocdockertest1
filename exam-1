@@ -10,11 +10,12 @@ CMD date | awk '{print $4}' >> question1.txt && cat question1.txt
 #Building Dockerfile
 docker build -t alpine:harshvardhan .
 #Running Container
-#Docker run -it --name harshvardhanc1q1 alpine:harshvardhan
+docker run -it --name harshvardhanc1q1 alpine:harshvardhan
 #Output
 12:28:41
 #Again Running Container
 docker start -i harshvardhanc1q1 
+12:28:41
 12:29:01
 
 
