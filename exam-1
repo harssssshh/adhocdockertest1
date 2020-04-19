@@ -38,5 +38,7 @@ Output: 7
 Question-5
 #Creating Volume
 docker volume create harshvardhanc5q5
+#Running Container
 docker run -it --name harshvardhanc5q5 -v harshvardhanc5q5:/adhocvol -v /etc/passwd:/user.txt alpine sh
+#Count Numbers
 wc -l user.txt > /adhocvol/usercount.txt
